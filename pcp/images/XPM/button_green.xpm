@@ -1,0 +1,33 @@
+/* XPM */
+static char *green[] = {
+/* columns rows colors chars-per-pixel */
+"24 24 2 1",
+".	s None	c None",
+"  c green",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        "
+};
+EOT

@@ -1,0 +1,23 @@
+<div *ngIf="sXPanelState">
+  <div class="xsquare">
+    <div  *ngFor="let sq of sXPanel.pPanel; let i = index" >
+
+
+    <div class="square">
+
+      <div  [ngClass]="{'start_label': (i === 0),
+                        'vertical_label': ((i % (sXPanel.pHor+1) === 0) && (i !== 0)),
+                        'all_squares': (i % (sXPanel.pHor+1) !== 0),
+                        'horizontal_label': (i < (sXPanel.pHor + 1)) && (i !== 0) }"
+           [ngStyle]="{left: adPx(sq.xWidth*(i % (sXPanel.pHor+1))), top: adPx( sq.xHeight*( i / (sXPanel.pHor+1) - (i % (sXPanel.pHor+1)) / (sXPanel.pHor +1)))}">
+                {{sq.xChar}}
+
+
+      </div>
+
+    </div>
+
+
+    </div>
+  </div>
+</div>

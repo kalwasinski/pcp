@@ -1,0 +1,57 @@
+<div class="menuBar">
+  <div *ngFor="let item of mMainMenuItems; let i = index">
+    <div class="firstItem" [ngStyle]="{left: adPx(item.mItemOffset)}">
+      <div [ngClass]="{'theItem1': item.mPullDown, 'theItem2': item.mPullDown === false}" (click)="selectMainMenu(i)" (mouseover)="closeOtherBoxes(i)">{{item.mItem}}
+        <div class="mainMenuArea" *ngIf="item.mPullDown">
+          <ng-container *ngFor="let sub of item.subItems; let j = index">
+              <div [ngClass]="{'separator': sub.sSeparator}"></div>
+
+              <div [ngSwitch]="sub.sType">
+
+                <div *ngSwitchCase="0">
+                  <div *ngIf="sub.sEnabled">
+                    <div class="otherItems" (click)="closeMyBox([i, j])" (mouseover)="closeOtherSubMenus([i, j])">{{sub.mSubItem}} {{sub.mShortCut}}
+                    </div>
+                  </div>
+                  <div *ngIf="!sub.sEnabled">
+                    <div class="grayItems" (mouseover)="closeOtherSubMenus([i, j])">{{sub.mSubItem}} {{sub.mShortCut}}
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="1">
+                  <div *ngIf="sub.sEnabled">
+                    <div class="otherItems" (click)="selectSubMenu([i, j])" (mouseover)="keepMyBox([i, j])">{{sub.mSubItem}}
+                        <img appSubmenu>
+                    </div>
+
+                    <div class="subMenuArea" *ngIf="sub.sPullDown">
+                      <div [ngStyle]="{top: adPx(sub.sSubItems[0].sSubTopOffset), left: adPx(sub.sSubItems[0].sSubLeftOffset)}">
+                        <div *ngFor="let subitem of sub.sSubItems; let k = index">
+                          <div class="subMenuA" (click)="closeSubBox([i, j, k])" [ngStyle]="{width: adPx(sub.sSubItemsWidth), top: adPx(subitem.sSubTopOffset), left: adPx(subitem.sSubLeftOffset)}">
+                            <div *ngIf="subitem.uChecked">
+                              <img appChecked>{{subitem.uSubItem}}
+                            </div>
+                            <div *ngIf="!subitem.uChecked">
+                              <img appUnchecked>{{subitem.uSubItem}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div *ngIf="!sub.sEnabled">
+                    <div class="grayItems" (mouseover)="keepMyBox([i, j])">{{sub.mSubItem}}
+                        <img appSubmenu>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

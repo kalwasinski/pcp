@@ -1,0 +1,143 @@
+.menuBar{
+  position: relative;
+  background-color: white;
+}
+.separator {
+  height: 1 px;
+  margin: 10px;
+  background: gray;
+}
+.theItem1 {
+  color: darkblue;
+  background-color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+}
+.theItem1:hover {
+  color: blue;
+  background-color: white;
+}
+.theItem2 {
+  color: darkblue;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  text-decoration: none;
+}
+.theItem2:hover {
+  color: darkblue;
+  background-color: white;
+
+}
+.firstItem {
+  color:darkblue;
+  background: white;
+
+  font-family: "Verdana", arial, sans-serif;
+  font-size: 14pt;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.firstItem:hover {
+  color:white;
+  background: darkblue;
+
+
+}
+.otherItems {
+  list-style-type: none;
+  color: darkblue;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-align-last: justify;
+  text-decoration: none;
+}
+.otherItems:hover {
+  color:white;
+  background: darkblue;
+}
+.grayItems {
+  list-style-type: none;
+  color: darkgray;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-align-last: justify;
+  text-decoration: none;
+}
+.grayItems:hover {
+  color:darkgray;
+  background: darkblue;
+}
+.subItems {
+  list-style-type: none;
+  color: darkblue;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid darkblue;
+
+}
+.subItems:hover {
+  color:white;
+  background: darkblue;
+
+
+}
+.subItem {
+  list-style-type: upper-latin;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid darkblue;
+
+}
+
+
+.mainMenuArea{
+  list-style-type: none;
+  font-family: "Verdana", arial, sans-serif;
+  font-size: 14pt;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  color: darkblue;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.subMenuA{
+  border: 1px solid white;
+  color: darkblue;
+  background: white;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align-last: justify;
+}
+.subMenuA:hover{
+  color: white;
+  background: darkblue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.subMenuArea{
+
+  position: absolute;
+
+}

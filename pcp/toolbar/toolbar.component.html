@@ -1,0 +1,9 @@
+<div class="toolBar">
+  <ng-container>
+    <div *ngFor="let item of tToolBoxItems">
+      <div class="toolBoxItem">
+        <img class="toolBoxImage" [src]="'/images/' + item.tIcon" (click)="selectToolBox(item.tItem)">
+      </div>
+    </div>
+  </ng-container>
+</div>

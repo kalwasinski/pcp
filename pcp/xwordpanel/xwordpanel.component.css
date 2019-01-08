@@ -1,0 +1,44 @@
+.xwordpanel {
+  z-index: -5;
+  background: lightsalmon;
+    position: relative;
+}
+.xsquare {
+  width: 30px;
+  height: 30px;
+
+  position: relative;
+}
+.square {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    position: absolute;
+}
+.start_label {
+    width: 30px;
+    height: 30px;
+    background: darkorchid;
+    position: absolute;
+}
+.vertical_label {
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    position: absolute;
+}
+
+.all_squares {
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+}
+
+.horizontal_label {
+    width: 30px;
+    height: 30px;
+    background: blue;
+    position: absolute;
+}

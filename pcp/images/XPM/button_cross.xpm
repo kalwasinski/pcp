@@ -1,0 +1,31 @@
+/* XPM */
+static char *cross[] = {
+/* columns rows colors chars-per-pixel */
+"16 20 4 1",
+"  c black",
+". c red",
+"X c #C6C6C6",
+"o c white",
+/* pixels */
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooo ooo",
+"oo  ooooooo . oo",
+"o .. ooooo ... o",
+"o ... ooo .... o",
+"oo ... o ...  oo",
+"ooo  .. ... oooo",
+"ooooo ...  ooooo",
+"oooo .. .. ooooo",
+"ooo .. o .. oooo",
+"oo .. ooo .. ooo",
+"o ... ooo ... oo",
+"o .. ooooo .. oo",
+"o .. oooooo  ooo",
+"oo  oooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};
+EOT

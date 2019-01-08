@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="panel">
+  <div class="menupanel">
+  <app-menu [mMainMenuItems]="mainManuBar"
+    (eventCloseSubBox)="closeMySubMenu($event)" (eventSubMenu)="selectSSubMenu($event)" (eventKeepMyBox)="keepMySubmenu($event)"
+    (eventCloseMyBox)="closeMyMenu($event)" (eventMainMenu)="selectSubMenu($event)" (eventCloseOtherBoxes)="closeOtherMenus($event)"
+    (eventcloseOtherSubMenus)="closeOtherSubMenus($event)">
+ </app-menu>
+  </div>
+  <div class="subpanel">
+    <app-toolbar [tToolBoxItems]="mainToolBar" (eventToolIcon)='runTool($event)'> </app-toolbar>
+  </div>
+
+<!--
+  <app-xsizepanel class="xsizepanel" [sXSize]="sSize" (eventCreateXWord)="createXrossWord($event)"></app-xsizepanel>
+-->
+<canvas>
+  <div class="circles">
+  </div>
+  <div class="mask">
+  </div>
+  <div class="circlemask">
+  </div>
+</canvas>
+
+  <div *ngIf="xPanelState">
+    <app-xwordpanel class="xwordpanel" [sXPanel]="xPanel" [sXPanelState]="xPanelState">
+    </app-xwordpanel>
+  </div>
+</div>

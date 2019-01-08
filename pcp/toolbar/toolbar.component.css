@@ -1,0 +1,21 @@
+.toolBar{
+  top: 0px;
+
+}
+.toolBoxItem{
+  color: darkblue;
+  float: left;
+  cursor: pointer;
+  margin: 1px;
+}
+.toolBoxImage{
+  font-family: "Verdana", arial, sans-serif;
+  font-size: 8pt;
+  cursor: pointer;
+
+  border: solid, 1px, black;
+  border-radius: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 1px;
+}
